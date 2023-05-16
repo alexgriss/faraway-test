@@ -1,0 +1,1 @@
+export { CharactersPagination } from './CharactersPagination';

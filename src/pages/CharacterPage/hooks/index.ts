@@ -1,0 +1,1 @@
+export { useCharacterPage } from './useCharacterPage';

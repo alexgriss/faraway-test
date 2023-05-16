@@ -1,0 +1,1 @@
+export { CharacterHeadValue } from './CharacterHeadValue';

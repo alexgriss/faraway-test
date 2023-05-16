@@ -1,0 +1,1 @@
+export { CharacterHead } from './CharacterHead';
