@@ -1,8 +1,9 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 
 import { CharacterPage, CharactersPage, ErrorPage } from '@/pages';
 
-const router = createBrowserRouter([
+// createHashRouter to work with github-pages
+const router = createHashRouter([
   {
     path: '/',
     element: <CharactersPage />,
