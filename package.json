@@ -4,12 +4,9 @@
   "version": "1.0.0",
   "description": "Faraway test",
   "license": "MIT",
-  "homepage": "https://alexgriss.github.io/faraway-test",
   "scripts": {
     "start": "webpack serve --config configs/webpack.dev.config.ts",
-    "build": "webpack --config configs/webpack.prod.config.ts",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "build": "webpack --config configs/webpack.prod.config.ts"
   },
   "dependencies": {
     "axios": "^1.4.0",
@@ -39,7 +36,6 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-webpack-plugin": "^4.0.1",
     "fork-ts-checker-webpack-plugin": "^8.0.0",
-    "gh-pages": "^5.0.0",
     "html-webpack-plugin": "^5.5.0",
     "prettier": "^2.7.0",
     "ts-node": "^10.8.1",
