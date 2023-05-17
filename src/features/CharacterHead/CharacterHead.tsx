@@ -6,14 +6,15 @@ import {
   getMass,
 } from '@/entities/character';
 
+import { CharacterHeadValue } from './ui';
 import {
   CharacterHeadWrapper,
   Head,
   HeadBeard,
   HeadContent,
   HeadEyes,
+  HeadTip,
 } from './styled';
-import { CharacterHeadValue } from './ui';
 
 interface ICharacterHead {
   character: TCharacter;
@@ -66,9 +67,7 @@ export const CharacterHead = ({
             value={getMass(mass)}
             onEditHandler={onEditMass}
           />
-          <i style={{ fontSize: '0.8rem' }}>
-            Click on character properties to change them
-          </i>
+          <HeadTip>Click on character properties to change them</HeadTip>
         </HeadContent>
       </Head>
     </CharacterHeadWrapper>

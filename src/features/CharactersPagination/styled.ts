@@ -6,8 +6,4 @@ export const PaginationWrapper = styled.div`
   align-items: center;
 
   margin-top: 2rem;
-
-  & > *:not(:first-child) {
-    margin-left: 2rem;
-  }
 `;

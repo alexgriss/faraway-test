@@ -52,8 +52,6 @@ export const useCharactersPage = () => {
     isLoading,
 
     count: characters?.count || 0,
-    isNext: !!characters?.next,
-    isPrevious: !!characters?.previous,
     page,
     setPage,
 

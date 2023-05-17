@@ -1,4 +1,5 @@
 import Axios, { AxiosRequestConfig, AxiosInstance } from 'axios';
+
 import { BASE_URL } from './constants';
 
 const basicAxiosConfig: AxiosRequestConfig = {

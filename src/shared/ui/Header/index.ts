@@ -1,4 +1,3 @@
-import { CSSProperties, ReactNode } from 'react';
 import styled from 'styled-components';
 
 type THeaderLevel = 'xs' | 's' | 'm' | 'l' | 'xl';
@@ -17,6 +16,5 @@ const getHeaderFontSize = ({ level }: IHeader) =>
   }[level]);
 
 export const Header = styled.div.attrs<IHeader>((props) => props)`
-  font-family: Vollkorn, Arial, Helvetica, sans-serif;
   font-size: ${getHeaderFontSize}rem;
 `;

@@ -1,6 +1,4 @@
-# Boiler-replate
-
-> **A base boilerplate to start develop your application with the latest React based on webpack**
+# Faraway test
 
 ## Quick start
 

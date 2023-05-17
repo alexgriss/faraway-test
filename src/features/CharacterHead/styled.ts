@@ -1,12 +1,13 @@
-import { getCharacterColors, getEyeColors } from '@/entities/character';
 import { styled } from 'styled-components';
+
+import { getCharacterColors, getEyeColors } from '@/entities/character';
 
 export const CharacterHeadWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
 
-  margin-top: 1.5rem;
+  margin-top: 5%;
 `;
 
 interface IHead {
@@ -16,8 +17,8 @@ interface IHead {
 export const Head = styled.div<IHead>`
   position: relative;
 
-  width: calc(100vh - 200px);
-  height: calc(100vh - 200px);
+  width: 600px;
+  height: 600px;
 
   margin: 0 auto;
 
@@ -37,7 +38,7 @@ interface IHeadEyes {
 
 export const HeadEyes = styled.div<IHeadEyes>`
   width: 100%;
-  height: 75px;
+  height: 12%;
 
   margin-top: 14rem;
 
@@ -81,4 +82,13 @@ export const HeadContent = styled.div`
 
 export const HeadLabel = styled.div`
   color: ${({ theme }) => theme.color.card.label};
+`;
+
+export const HeadTip = styled.div`
+  margin-top: 0.8rem;
+
+  font-style: italic;
+  font-size: 0.8rem;
+
+  color: ${({ theme }) => theme.color.button.border};
 `;

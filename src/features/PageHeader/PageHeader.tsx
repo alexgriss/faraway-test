@@ -1,7 +1,9 @@
 import { ReactNode } from 'react';
 
 import { FlexWrapper } from '@/shared/layout';
-import { Header, Input } from '@/shared/ui';
+import { Header } from '@/shared/ui';
+
+import { SInput } from './styled';
 
 interface IPageHeader {
   children: ReactNode;
@@ -17,9 +19,9 @@ export const PageHeader = ({
   return (
     <FlexWrapper ai="center" jc="space-between">
       <Header level="xl">{children}</Header>
-      <Input
+      <SInput
         style={{ width: '400px' }}
-        placeholder="Start enter a name to search..."
+        placeholder="Start enter a name of a character to search..."
         value={searchString}
         onChange={(e) => onSearchStringChange(e.currentTarget.value)}
       />

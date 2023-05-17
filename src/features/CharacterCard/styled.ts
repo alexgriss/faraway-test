@@ -1,5 +1,6 @@
-import { getCharacterColors, getEyeColors } from '@/entities/character';
 import { styled } from 'styled-components';
+
+import { getCharacterColors, getEyeColors } from '@/entities/character';
 
 export const Wrapper = styled.div`
   transition: 0.3s;

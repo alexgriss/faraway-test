@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom';
 
-import { CharactersList, CharactersPagination } from '@/widgets';
-import { PageHeader } from '@/features';
+import { CharactersList } from '@/widgets';
+import { PageHeader, CharactersPagination } from '@/features';
 import { Spinner } from '@/shared/ui';
 import { PageContent, PageWrapper } from '@/shared/layout';
 
@@ -11,8 +11,7 @@ export const CharactersPage = () => {
   const {
     characters,
     isLoading,
-    isNext,
-    isPrevious,
+    count,
     page,
     setPage,
     searchString,
@@ -36,9 +35,8 @@ export const CharactersPage = () => {
             <CharactersList characters={characters} />
             {characters.length > 0 && (
               <CharactersPagination
-                isNext={isNext}
-                isPrevious={isPrevious}
                 page={page}
+                count={count}
                 setPage={setPage}
               />
             )}
