@@ -67,7 +67,7 @@ export const CharacterHead = ({
             value={getMass(mass)}
             onEditHandler={onEditMass}
           />
-          <HeadTip>Click on character properties to change them</HeadTip>
+          <HeadTip>Click on the character properties to change them</HeadTip>
         </HeadContent>
       </Head>
     </CharacterHeadWrapper>
